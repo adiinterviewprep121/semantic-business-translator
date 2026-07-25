@@ -1,0 +1,11 @@
+{
+    "intent": "count | list | sum | average | minimum | maximum",
+    "entity": "string",
+    "filters": [
+        {
+            "column": "string",
+            "operator": "=",
+            "value": "string"
+        }
+    ]
+}

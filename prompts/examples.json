@@ -1,0 +1,79 @@
+[
+    {
+        "question": "How many open deals does Garima own?",
+        "response": {
+            "intent": "count",
+            "entity": "deals",
+            "target_column": null,
+            "filters": [
+                {
+                    "column": "Assigned To",
+                    "operator": "=",
+                    "value": "Garima"
+                },
+                {
+                    "column": "Pipeline Stage",
+                    "operator": "=",
+                    "value": "Open"
+                }
+            ]
+        }
+    },
+    {
+        "question": "Show all deals in negotiation.",
+        "response": {
+            "intent": "list",
+            "entity": "deals",
+            "target_column": null,
+            "filters": [
+                {
+                    "column": "Pipeline Stage",
+                    "operator": "=",
+                    "value": "Negotiation"
+                }
+            ]
+        }
+    },
+    {
+        "question": "What is the total deal value for Rahul?",
+        "response": {
+            "intent": "sum",
+            "entity": "deals",
+            "target_column": "Deal Value",
+            "filters": [
+                {
+                    "column": "Assigned To",
+                    "operator": "=",
+                    "value": "Rahul"
+                }
+            ]
+        }
+    },
+    {
+        "question": "What is the average deal value?",
+        "response": {
+            "intent": "average",
+            "entity": "deals",
+            "target_column": "Deal Value",
+            "filters": []
+        }
+    },
+    {
+        "question": "What is the highest deal value?",
+        "response": {
+            "intent": "maximum",
+            "entity": "deals",
+            "target_column": "Deal Value",
+            "filters": []
+        }
+    },
+    {
+        "question": "What is the lowest deal value?",
+        "response": {
+            "intent": "minimum",
+            "entity": "deals",
+            "target_column": "Deal Value",
+            "filters": []
+        }
+    }
+]

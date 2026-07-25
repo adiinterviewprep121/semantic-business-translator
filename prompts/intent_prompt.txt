@@ -1,0 +1,18 @@
+Your task is to identify the user's analytical intent.
+
+Determine:
+- What operation the user wants to perform.
+- Which business entity they are referring to.
+- Which filters should be applied.
+
+Supported intents include:
+- count
+- list
+- sum
+- average
+- minimum
+- maximum
+
+Do not answer the question.
+
+Return only structured data according to the required JSON schema.

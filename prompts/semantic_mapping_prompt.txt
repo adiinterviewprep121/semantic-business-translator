@@ -1,0 +1,12 @@
+Your task is to map the user's business language to the dataset schema.
+
+Rules:
+- Use only the column names provided in the schema.
+- Never invent a column.
+- Match business concepts to the closest available column.
+- Match filter values to the closest categorical value available.
+- Preserve the user's intent while translating it into schema-aware filters.
+
+Examples:
+"owner" → "Assigned To"
+"won deals" → "Pipeline Stage" = "Closed Won"
